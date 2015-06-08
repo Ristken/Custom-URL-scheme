@@ -14,7 +14,7 @@
   <license>MIT</license>
 
   <preference name="URL_SCHEME" />
-  <preference name="URL_SCHEME2" />
+  <preference name="URL_SCHEME_FB" />
 
   <engines>
     <engine name="cordova" version=">=3.0.0"/>
@@ -32,7 +32,7 @@
           <key>CFBundleURLSchemes</key>
           <array>
             <string>$URL_SCHEME</string>
-            <string>$URL_SCHEME2</string>
+            <string>$URL_SCHEME_FB</string>
           </array>
         </dict>
       </array>
@@ -61,7 +61,7 @@
         <category android:name="android.intent.category.BROWSABLE" />
       </intent-filter>
       <intent-filter>
-        <data android:scheme="$URL_SCHEME2"/>
+        <data android:scheme="$URL_SCHEME_FB"/>
         <action android:name="android.intent.action.VIEW" />
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.BROWSABLE" />
@@ -74,7 +74,7 @@
     <config-file target="package.appxmanifest" parent="/Package/Applications/Application/Extensions">
       <Extension Category="windows.protocol" StartPage="www/index.html">
         <Protocol Name="$URL_SCHEME" />
-        <Protocol Name="$URL_SCHEME2" />
+        <Protocol Name="$URL_SCHEME_FB" />
       </Extension>
     </config-file>
     
@@ -88,19 +88,19 @@
     <config-file target="package.windows.appxmanifest" parent="/Package/Applications/Application/Extensions">
       <Extension Category="windows.protocol" StartPage="www/index.html">
         <Protocol Name="$URL_SCHEME" />
-        <Protocol Name="$URL_SCHEME2" />
+        <Protocol Name="$URL_SCHEME_FB" />
       </Extension>
     </config-file>
     <config-file target="package.windows80.appxmanifest" parent="/Package/Applications/Application/Extensions">
       <Extension Category="windows.protocol" StartPage="www/index.html">
         <Protocol Name="$URL_SCHEME" />
-        <Protocol Name="$URL_SCHEME2" />
+        <Protocol Name="$URL_SCHEME_FB" />
       </Extension>
     </config-file>
     <config-file target="package.phone.appxmanifest" parent="/Package/Applications/Application/Extensions">
       <Extension Category="windows.protocol" StartPage="www/index.html">
         <Protocol Name="$URL_SCHEME" />
-        <Protocol Name="$URL_SCHEME2" />
+        <Protocol Name="$URL_SCHEME_FB" />
       </Extension>
     </config-file>
     <js-module src="www/windows/LaunchMyApp.js" name="LaunchMyApp">
